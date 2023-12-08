@@ -26,7 +26,7 @@ environment:
 # consider running `flutter pub upgrade --major-versions`. Alternatively,
 # dependencies can be manually updated by changing the version numbers below to
 # the latest version available on pub.dev. To see which dependencies have newer
-# versions available, run `flutter pub outdated`.
+# versions available, run `flutter pub outdhttps://github.com/Muneef-Nk/ev_companion/pull/1/conflict?name=pubspec.yaml&ancestor_oid=583654ffc0ff201c3deace2f16131814c35c6a52&base_oid=93d5cd388a9ba2eb1e6eeeb6a1445cc9f289a4b5&head_oid=acd78adb2b7b91c95159a9367d35fd4beeedaaf4ated`.
 dependencies:
   flutter:
     sdk: flutter
@@ -35,8 +35,12 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+
+  flutter_switch: ^0.3.2
+
   google_fonts: ^6.1.0
   font_awesome_icon_class: ^0.0.6
+
 
 dev_dependencies:
   flutter_test:

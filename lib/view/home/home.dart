@@ -8,6 +8,7 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       body: CustomScrollView(slivers: [
         SliverAppBar(
@@ -101,5 +102,6 @@ class Home extends StatelessWidget {
         ],))
       ]),
     );
+
   }
 }
