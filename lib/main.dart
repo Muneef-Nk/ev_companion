@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: "ev companion",
       debugShowCheckedModeBanner: false,
       home: Home(),
-      theme: ThemeData(fontFamily: 'Poppins'),
+      // theme: ThemeData(fontFamily: 'Poppins'),
     );
   }
 }
