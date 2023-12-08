@@ -1,4 +1,6 @@
 import 'package:ev_companion/view/home/home.dart';
+import 'package:ev_companion/view/loginscreen/loginscreen.dart';
+import 'package:ev_companion/view/searchscreen/searchscreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "ev companion",
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: LoginScreen(),
       theme: ThemeData(fontFamily: 'Poppins'),
     );
   }
