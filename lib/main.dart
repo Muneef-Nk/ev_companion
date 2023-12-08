@@ -1,3 +1,4 @@
+import 'package:ev_companion/view/charging_station_details/station_details.dart';
 import 'package:ev_companion/view/home/home.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "ev companion",
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: StationDetailsScreen(),
       theme: ThemeData(fontFamily: 'Poppins'),
     );
   }
