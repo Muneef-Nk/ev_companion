@@ -1,4 +1,4 @@
-import 'package:ev_companion/view/charging_station_details/station_details.dart';
+import 'package:ev_companion/utils/constants/color_constants/color_constants.dart';
 import 'package:ev_companion/view/home/home.dart';
 import 'package:flutter/material.dart';
 
@@ -15,8 +15,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "ev companion",
       debugShowCheckedModeBanner: false,
-      home: StationDetailsScreen(),
-      theme: ThemeData(fontFamily: 'Poppins'),
+      home: Home(),
+      theme: ThemeData(fontFamily: 'Poppins',colorScheme: ColorScheme.fromSeed(seedColor: ColorConstants.primaryColor)),
     );
   }
 }
