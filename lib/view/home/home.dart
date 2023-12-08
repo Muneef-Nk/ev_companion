@@ -1,6 +1,6 @@
 import 'package:ev_companion/utils/constants/color_constants/color_constants.dart';
+import 'package:ev_companion/view/searchscreen/searchscreen.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_icon_class/font_awesome_icon_class.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Home extends StatelessWidget {
@@ -8,7 +8,6 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: CustomScrollView(slivers: [
         SliverAppBar(
@@ -69,39 +68,45 @@ class Home extends StatelessWidget {
               child: Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                child: Container(
-                  height: 50,
-                  width: double.infinity,
-                  padding: EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(40),
-                      color: ColorConstants.secondaryColor),
-                  child: Row(children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 12),
-                      child: Icon(
-                        Icons.search_rounded,
-                        color: ColorConstants.primaryWhite,
-                        size: 30,
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => SearchScreen()));
+                  },
+                  child: Container(
+                    height: 50,
+                    width: double.infinity,
+                    padding: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(40),
+                        color: ColorConstants.secondaryColor),
+                    child: Row(children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 12),
+                        child: Icon(
+                          Icons.search_rounded,
+                          color: ColorConstants.primaryWhite,
+                          size: 30,
+                        ),
                       ),
-                    ),
-                    SizedBox(
-                      width: MediaQuery.sizeOf(context).width * 0.6,
-                      child: Text(
-                        'Search for nearby stations',
-                        style: TextStyle(
-                            color: ColorConstants.primaryWhite, fontSize: 15),
-                      ),
-                    )
-                  ]),
+                      SizedBox(
+                        width: MediaQuery.sizeOf(context).width * 0.6,
+                        child: Text(
+                          'Search for nearby stations',
+                          style: TextStyle(
+                              color: ColorConstants.primaryWhite, fontSize: 15),
+                        ),
+                      )
+                    ]),
+                  ),
                 ),
               )),
         ),
-        SliverToBoxAdapter(child: Column(children: [
-          
-        ],))
+        SliverToBoxAdapter(
+            child: Column(
+          children: [],
+        ))
       ]),
     );
-
   }
 }
