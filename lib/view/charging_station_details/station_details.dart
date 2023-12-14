@@ -1,4 +1,7 @@
+import 'dart:collection';
+
 import 'package:ev_companion/utils/constants/color_constants/color_constants.dart';
+import 'package:ev_companion/view/map_view/map_view.dart';
 import 'package:flutter/material.dart';
 
 class StationDetailsScreen extends StatelessWidget {
@@ -174,12 +177,15 @@ class StationDetailsScreen extends StatelessWidget {
                 ),
                 Column(
                   children: [
-                    CircleAvatar(
-                      radius: 25,
-                      backgroundColor: Colors.grey.shade100,
-                      child: Icon(
-                        Icons.assistant_direction,
-                        color: ColorConstants.primaryColor,
+                    InkWell(
+                      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => MapViewDirection(),)),
+                      child: CircleAvatar(
+                        radius: 25,
+                        backgroundColor: Colors.grey.shade100,
+                        child: Icon(
+                          Icons.assistant_direction,
+                          color: ColorConstants.primaryColor,
+                        ),
                       ),
                     ),
                     SizedBox(
