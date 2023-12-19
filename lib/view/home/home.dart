@@ -40,7 +40,9 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
               backgroundColor: ColorConstants.primaryWhite,
               leading: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Image.asset('assets/images/menus.png'),
+                child: InkWell(
+                  
+                  child: Image.asset('assets/images/menus.png')),
               ),
               leadingWidth: 45,
               centerTitle: true,
