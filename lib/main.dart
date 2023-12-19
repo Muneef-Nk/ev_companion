@@ -1,5 +1,4 @@
 import 'package:ev_companion/utils/constants/color_constants/color_constants.dart';
-import 'package:ev_companion/view/home/home.dart';
 import 'package:ev_companion/view/loginscreen/loginscreen.dart';
 import 'package:flutter/material.dart';
 
